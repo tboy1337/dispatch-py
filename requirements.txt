@@ -8,4 +8,4 @@ dnspython
 ipaddress
 typing_extensions
 psutil
-PySocks 
+PySocks
