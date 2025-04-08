@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="dispatch-proxy",
+    name="dispatch-proxy-py",
     version="0.1.0",
     description="A SOCKS proxy that balances traffic between network interfaces",
     author="Dispatch Team",
