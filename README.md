@@ -13,7 +13,7 @@ You'll need Python 3.7 or later.
 ```
 git clone https://github.com/yourusername/dispatch-proxy.git
 cd dispatch-proxy
-pip install -e .
+pip install -r requirements.txt
 ```
 
 ## Rationale
