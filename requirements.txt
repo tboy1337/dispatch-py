@@ -1,0 +1,11 @@
+asyncio>=3.4.3
+click>=8.1.3
+colorama>=0.4.6
+netifaces>=0.11.0
+python-socks>=2.4.0
+async-timeout>=4.0.2
+dnspython>=2.3.0
+ipaddress>=1.0.23
+typing_extensions>=4.5.0
+psutil>=5.9.5
+PySocks>=1.7.1 
