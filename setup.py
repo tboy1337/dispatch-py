@@ -7,8 +7,8 @@ with open("README.md", "r", encoding="utf-8") as f:
     readme = f.read()
 
 setup(
-    name="dispatch-py",
-    version="0.1.0",
+    name="dispatch",
+    version="1.0.0",
     description="A SOCKS proxy that balances traffic between network interfaces",
     long_description=readme,
     long_description_content_type="text/markdown",
