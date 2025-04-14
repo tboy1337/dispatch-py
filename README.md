@@ -1,4 +1,4 @@
-# dispatch-proxy
+# dispatch-py
 
 A SOCKS proxy that balances traffic between network interfaces.
 
@@ -11,16 +11,16 @@ A SOCKS proxy that balances traffic between network interfaces.
 You'll need Python 3.7 or later.
 
 ```
-git clone https://github.com/yourusername/dispatch-proxy.git
-cd dispatch-proxy
-pip install -e .
+git clone https://github.com/tboy1337/dispatch-py.git
+cd dispatch-py
+pip install -r requirements.txt
 ```
 
 ## Rationale
 
 You often find yourself with multiple unused internet connections—be it 5G mobile hotspot or a free Wi-Fi network—that your system won't let you use alongside your primary one.
 
-For instance, you might have a cabled and wireless internet access, each separately capped at a specific bandwidth. By combining all of these with dispatch-proxy and a download manager, you can achieve a higher effective bandwidth!
+For instance, you might have a cabled and wireless internet access, each separately capped at a specific bandwidth. By combining all of these with dispatch-py and a download manager, you can achieve a higher effective bandwidth!
 
 ## Use cases
 
