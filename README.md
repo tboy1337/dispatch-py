@@ -4,6 +4,8 @@ A SOCKS proxy that balances traffic between network interfaces.
 
 *Should work on macOS, Windows, and Linux.*
 
+This is a python rewrite of [dispatch](https://github.com/alexkirsz/dispatch) a rust rewrite of [dispatch-proxy](https://github.com/alexkirsz/dispatch-proxy), originally written in CoffeeScript and targeting Node.js.
+
 ## Installation
 
 ### From source
