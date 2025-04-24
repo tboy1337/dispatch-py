@@ -46,8 +46,14 @@ dispatch = "dispatch.main:main"
 
 [tool.setuptools]
 # Use find_packages() to auto-discover all packages and subpackages
-packages = "find:"
 include-package-data = true
+
+[tool.setuptools.packages.find]
+# Parameters for the find directive are specified in a table below the directive
+include = ["dispatch*"]  # include all packages starting with 'dispatch'
+# Optional parameters:
+# where = ["."]  # search for packages in the current directory
+# exclude = ["tests*"]  # exclude packages matching these patterns
 
 [tool.setuptools.package-data]
 "*" = ["*.txt", "*.md"] 
