@@ -15,7 +15,7 @@ from .server import run_server
 
 @click.group()
 @click.option('--debug', '-d', is_flag=True, help='Write debug logs to stdout instead of a file')
-@click.version_option(version='1.0.0')
+@click.version_option(version='1.0.1')
 @click.pass_context
 def cli(ctx, debug: bool):
     """A SOCKS proxy that balances traffic between network interfaces."""

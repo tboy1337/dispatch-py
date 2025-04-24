@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dispatch-proxy"
-version = "1.0.0"
+version = "1.0.1"
 description = "A SOCKS proxy that balances traffic between network interfaces"
 readme = "README.md"
 authors = [
