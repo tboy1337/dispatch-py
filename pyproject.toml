@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dispatch"
+name = "dispatch-proxy"
 version = "1.0.0"
 description = "A SOCKS proxy that balances traffic between network interfaces"
 readme = "README.md"

@@ -8,6 +8,12 @@ This is a python rewrite of [dispatch](https://github.com/alexkirsz/dispatch) a 
 
 ## Installation
 
+### From PyPI
+
+```
+pip install dispatch-proxy
+```
+
 ### From source
 
 You'll need Python 3.7 or later.
