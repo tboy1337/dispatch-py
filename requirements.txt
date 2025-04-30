@@ -9,3 +9,5 @@ ipaddress
 typing_extensions
 psutil
 PySocks
+pytest
+pytest-asyncio

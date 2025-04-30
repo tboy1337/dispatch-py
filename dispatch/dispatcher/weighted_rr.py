@@ -174,7 +174,13 @@ class WeightedRoundRobinDispatcher(Dispatch):
         
         Args:
             addresses: List of weighted addresses to dispatch to
+            
+        Raises:
+            ValueError: If no addresses are provided
         """
+        if not addresses:
+            raise ValueError("No addresses provided for dispatcher")
+            
         self.lock = asyncio.Lock()
         
         # Group by IP version

@@ -111,4 +111,18 @@ Whenever the SOCKS proxy server receives a connection request to an address or d
 **Beware:** If the requested address or domain resolves to an IPv4 (resp. IPv6) address, an IPv4 (resp. IPv6) local address must be provided.
 
 ## License
-This project is licensed under the terms of the [MIT License](LICENSE.txt). 
+This project is licensed under the terms of the [MIT License](LICENSE.txt).
+
+## Running Tests
+
+To run all tests, use:
+
+```
+pytest
+```
+
+Ensure all dependencies are installed with:
+
+```
+pip install -r requirements.txt
+``` 
