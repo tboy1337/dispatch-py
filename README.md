@@ -110,6 +110,41 @@ Whenever the SOCKS proxy server receives a connection request to an address or d
 
 **Beware:** If the requested address or domain resolves to an IPv4 (resp. IPv6) address, an IPv4 (resp. IPv6) local address must be provided.
 
+## Simulated Network Testing
+
+For testing `dispatch-py` without requiring multiple physical network interfaces, a simulated network testing framework is included. This allows testing the load balancing functionality across multiple virtual interfaces with configurable properties:
+
+- Bandwidth limits
+- Latency/ping time
+- Packet loss rates
+- Interface failures
+
+### Running Simulated Tests
+
+To run the simulated network tests:
+
+```
+python run_simulated_tests.py
+```
+
+Options:
+- `--verbose` / `-v`: Set verbosity level (0-3)
+- `--fail-fast` / `-f`: Stop on first test failure  
+- `--all` / `-a`: Run all tests, not just the simulated ones
+- `--test` / `-t`: Run a specific test module (e.g., `test_network_simulator`)
+
+### How It Works
+
+The simulated network testing works by:
+
+1. Creating virtual network interfaces with configurable properties
+2. Patching Python's socket implementation to intercept network operations
+3. Routing traffic through the virtual interfaces
+4. Applying simulated network conditions (bandwidth, latency, packet loss)
+5. Running the dispatch proxy with these virtual interfaces
+
+This allows comprehensive testing of dispatch's behavior with different network conditions without requiring multiple physical connections.
+
 ## License
 This project is licensed under the terms of the [MIT License](LICENSE.txt).
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dispatch-proxy"
-version = "1.0.3"
+version = "1.0.4"
 description = "A SOCKS proxy that balances traffic between network interfaces"
 readme = "README.md"
 authors = [
@@ -53,7 +53,7 @@ include-package-data = true
 include = ["dispatch*"]  # include all packages starting with 'dispatch'
 # Optional parameters:
 # where = ["."]  # search for packages in the current directory
-# exclude = ["tests*"]  # exclude packages matching these patterns
+exclude = ["tests*"]  # exclude packages matching these patterns
 
 [tool.setuptools.package-data]
 "*" = ["*.txt", "*.md"] 

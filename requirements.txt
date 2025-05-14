@@ -11,3 +11,5 @@ psutil
 PySocks
 pytest
 pytest-asyncio
+requests
+pytest-mock
