@@ -1,0 +1,12 @@
+asyncio
+click
+colorama
+netifaces
+python-socks
+async-timeout
+dnspython
+ipaddress
+typing_extensions
+psutil
+PySocks
+requests

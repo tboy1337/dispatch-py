@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dispatch-proxy"
+version = "1.0.9"
+description = "A SOCKS proxy that balances traffic between network interfaces"
+readme = "README.md"
+authors = [
+    {name = "tboy1337", email = "obywhuie@anonaddy.com"},
+]
+license = {text = "Commercial Restricted License (CRL)"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "asyncio",
+    "click",
+    "colorama",
+    "netifaces",
+    "python-socks",
+    "async-timeout",
+    "dnspython",
+    "ipaddress",
+    "typing_extensions",
+    "psutil",
+    "PySocks",
+]
+
+[project.urls]
+Homepage = "https://github.com/tboy1337/dispatch-py"
+"Bug Tracker" = "https://github.com/tboy1337/dispatch-py/issues"
+"Download" = "https://github.com/tboy1337/dispatch-py/releases/latest"
+
+[project.scripts]
+dispatch = "dispatch.main:main"
+
+[tool.setuptools]
+# Use find_packages() to auto-discover all packages and subpackages
+include-package-data = true
+
+[tool.setuptools.packages.find]
+# Parameters for the find directive are specified in a table below the directive
+include = ["dispatch*"]  # include all packages starting with 'dispatch'
+# Optional parameters:
+# where = ["."]  # search for packages in the current directory
+exclude = ["tests*"]  # exclude packages matching these patterns
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"] 
